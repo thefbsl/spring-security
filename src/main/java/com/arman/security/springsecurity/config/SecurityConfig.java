@@ -24,8 +24,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
     @Autowired
     private JwtAuthFilter jwtAuthFilter;
-    @Bean
+
     // authenticate
+    @Bean
     public UserDetailsService userDetailsService(){
 //        UserDetails admin = User.withUsername("admin")
 //                .password(encoder.encode("admin"))
